@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <form class="search-form" id="form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-city"
+          />
+          <input type="submit" value="Search" class="button" id="submit" />
+        </form>
+        <hr />
+      </header>
+      <main>
+        <div class="current-weather">
+          <div class="city-description">
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-time">Saturday 15:32</span>, moderate rain
+              <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div>
+            <span class="current-temp-emoji">☀️</span
+            ><span class="current-temp" id="current-temp"> 14</span
+            ><span class="current-temp-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <hr />
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Cecilie Dreyer Lyng</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>

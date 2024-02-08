@@ -89,9 +89,9 @@ a {
 
 .current-temp-emoji {
   position: relative;
-  top: -5px;
-  right: -5px;
+  top: -8px;
   font-size: 40px;
+  margin-right: 10px;
 }
 
 .current-temp-unit {
